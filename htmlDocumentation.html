@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Documentation HTML5</title>
+	<!-- Liaison ficheir css -->
+	<link rel="stylesheet" type="text/css" href="css/styleHtml.css">
+</head>
+<body>
+	<div class="content">
+		<!-- Debut menu lateral -->
+		<div id="sidebar">
+			<h2>DOCUMENTATION HTML5</h2>
+
+			<ul>
+				<li><a href="#ancre1">Introduction</a></li>
+				<li><a href="#ancre2">Les Fondations Du HTML5</a></li>
+				<li><a href="#ancre3">Les Balises HTML5</a></li>
+				<li><a href="#ancre4">Le Squelette HTML5</a></li>
+				<li><a href="#ancre5">Les paragraphes</a></li>
+				<li><a href="#ancre6">Les listes </a></li>
+				<li><a href="#ancre7">Les liens</a></li>
+				<li><a href="#ancre8">Les Balis en Blocs</a></li>
+				<li><a href="#ancre9">Les Balises en Ligne</a></li>
+				<li><a href="#ancre10">Les Tableaux </a></li>
+				<li><a href="#ancre11">Les Formulaires</a></li>
+				<li><a href="#">HTML Avancé</a></li>
+				<li><a href="#ancre12">Les Medias Query</a></li>
+				<li><a href="#ancre13">Les API HTML</a></li>
+				<li><a href="#">Convertisseur Px en Em</a></li>
+				<li><a href="#">La balise canvas</a></li>
+				<li><a href="#">References</a></li>
+				<li><a href="#">Les defis du code</a></li>
+				<li><a href="#">Les projets HTML5</a></li>
+			</ul>
+		</div>
+		<!-- Fin menu lateral -->
+		<div id="Documentation">
+			<h1 id="ancre1">INTRODUCTION EN HTML ET CSS</h1>
+			<P>
+				HTML est l’abréviation de HyperText Markup Language, soit en français « langage hypertexte de balisage ». Ce langage a été créé en 1991 et a pour fonction de structurer et de donner du sens à du contenu. <br>
+				CSS signifie Cascading StyleSheets, soit « feuilles de style en cascade ». Il a été créé en 1996 et a pour rôle de mettre en forme du contenu en lui appliquant ce qu’on appelle des styles. <br>
+				Il ne faut JAMAIS utiliser le HTML pour faire le travail du CSS : <br>
+				•  HTML est utilisé pour baliser un contenu, c’est à dire pour le structurer et lui donner du sens. Le HTML sert, entre autres choses, à indiquer aux navigateurs quel texte doit être considéré comme un paragraphe, quel texte doit être considéré comme un titre, que tel contenu est une image ou une vidéo. <br> 
+				•  CSS est utilisé pour appliquer des styles à un contenu, c’est-à-dire à le mettre en forme. Ainsi, avec le CSS, on pourra changer la couleur ou la taille d’un texte, positionner tel contenu à tel endroit de notre page web ou ajouter des bordures ou des ombres autour d’un contenu. <br>
+				Les versions actuelles du HTML et du CSS sont HTML5 et CSS3. Il faut savoir que, contrairement aux idées reçues, ce sont encore des versions non finalisées. Cela signifie que ces versions sont toujours en développement et qu’elles sont toujours en théorie sujettes à changements et à bugs. <br>
+				La version 5 d’HTML, tout comme la version 3 de CSS introduisent de nombreuses nouvelles fonctionnalités longtemps attendues par les développeurs et il serait donc dommage de s’en priver. <br>
+				Parmi celles-ci, l’insertion simplifiée de vidéos et de contenus audio et de nouvelles balises améliorant la sémantique (on va y revenir, pas d’inquiétude !) pour mieux structurer nos pages en HTML ou encore la possibilité de créer des bordures arrondies en CSS. <br>
+				Pour coder en HTML et en CSS, nous n’avons besoin que d’un éditeur de text : <br>
+					•   NotePad++, sous Windows; <br>
+					•   Komodo, pour Mac ou Linux; <br>
+					•   TextWrangler, pour Linux. <br>
+				<h2>Navigateurs Web </h2>
+				Le but d'un navigateur web (Chrome, Edge, Firefox, Safari) est de lire des documents HTML et de les afficher correctement.
+				Un navigateur n'affiche pas les balises HTML, mais les utilise pour déterminer comment afficher le document :
+			</p>
+			<p>
+				<h1 id="ancre2">LES FONDATIONS DU HTML5</h1> 
+				Il y a trois termes dont vous devez absolument comprendre le sens en HTML. Ce sont les termes élément, balise et attribut. 
+				Les éléments, tout d’abord, vont nous servir à définir des objets dans notre page. Grâce aux éléments, nous allons pouvoir définir un paragraphe (élément p), des titres d’importances diverses (éléments h1, h2, h3, h4, h5 et h6) ou un lien (élément a). <br>
+				Les éléments sont constitués de balises. Dans la majorité des cas, un élément est constitué d’une paire de balises : une balise ouvrante et une balise fermante. <br>
+
+				<h2>Un document HTML simple</h2>
+
+				&lt!DOCTYPE html&gt<br>
+				&lthtml&gt<br>
+				&lthead&gt<br>
+						&lttitle&gtPage Title&lt/title&gt<br>
+				&lt/head&gt<br>
+				&ltbody&gt<br>
+
+							&lth1&gtThis is a Heading&lt/h1&gt<br>
+							&ltp&gtThis is a paragraph.&lt/p&gt<br>
+
+				&lt/body&gt<br>
+				&lt/html&gt<br>
+
+				<h2>Exemple expliqué</h2><br>
+				
+				La déclaration &lt!DOCTYPE html&gt définit que ce document est un document HTML5n <br>
+				L'élément &lthtml&gt est l'élément racine d'une page HTML <br>
+				L'élément &lthead&gt contient des méta-informations sur la page HTML <br>
+				L'élément &lttitle&gt spécifie un titre pour la page HTML (qui s'affiche dans la barre de titre du navigateur ou dans l'onglet de la page) <br>
+				L'élément &ltbody&gt définit le corps du document et est un conteneur pour tous les contenus visibles, tels que les titres, les paragraphes, les images, les hyperliens, les tableaux, les listes, etc. <br>
+				L'élément &lth1&gt définit un grand titre <br>
+				L'élément &ltp&gt définit un paragraphe <br>
+				Qu'est-ce qu'un élément HTML ? <br>
+				Un élément HTML est défini par une balise de début, du contenu et une balise de fin : <br>
+				&lttagname&gt Le contenu va ici... &lt/tagname&gt <br>
+				L'élément HTML est tout, de la balise de début à la balise de fin : <br>
+				&lth1&gt Ma première rubrique &lt/h1&gt <br>
+				&ltp&gt Mon premier paragraphe. &lt/p&gt
+				<h1 id="ancre3">Les balises HTML5</h1>
+				Les balises reprennent le nom de l’élément et sont entourées de chevrons. La balise fermante possède en plus un slash qui précède le nom de l’élément.
+				Cependant, certains éléments ne sont constitués que d’une balise qu’on appelle alors balise orpheline. C’est par exemple le cas de l’élément br qui va nous servir à créer un retour à la ligne. <br>
+				Notez que, dans le cas des balises orphelines, le slash se situe après le nom de l’élément. Notez également que ce slash n’est pas obligatoire et que certains développeurs l’omettent volontairement. <br>
+				Je vous conseille cependant, pour des raisons de propreté de code et de compréhension, de mettre le slash dans un premier temps. <br>
+				Les attributs, enfin, vont venir compléter les éléments en leur donnant des indications ou des instructions supplémentaires. <br>
+				Par exemple, dans le cas d’un lien, on va se servir d’un attribut pour indiquer la cible du lien, c’est à dire vers quel site le lien doit mener. <br>
+				Notez que les attributs se placent toujours à l’intérieur de la balise ouvrante d’un élément (ou de la balise orpheline le cas échéant). <br>
+
+				<h2>Remarque :</h2> Certains éléments HTML n'ont pas de contenu (comme l'élément &ltbr&lt). Ces éléments sont appelés éléments vides. Les éléments vides n'ont pas de balise de fin !  <br>
+				<h2 id="ancre5">Les paragraphes</h2>
+				&ltp&gt: l'element paragraphe <br>
+				L'élément &ltp&gt represent un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace vertical, leur première ligne est également parfois indentée. <br>
+				Exemple: &ltp&gt Mon premier paragraphe. &lt/p&gt
+				<h2 id="ancre6">Les listes en HTML5</h2>
+				Les listes, s'ils sont peu fréquent dans la plupart des textes que l'on trouve dans la presse, sont néanmoins une forme courante d'écriture sur le web qui exige concision plus que qualités littéraires au vu de la rapidité avec laquelle les internautes passent d'un contenu à l'autre. Dans ce contexte la liste va permettre d'énumérer un certain nombre d'éléments. Les différents types de listes sont : <br>
+
+				liste à puce ; <br>
+				liste numérotée ; <br>
+				liste de définition. <br>
+				Dans chaque cas, la liste se définit d'au moins deux éléments : <br>
+
+				celui qui définit le type de liste et l'encadre ; <br>
+				ceux qui définissent chaque objet énuméré. <br>
+				Liste à puce et liste numérotée <br>
+				Liste à puce et liste numérotée partagent toutes deux le même type de code HTML. Les objets de la liste sont énumérés avec l'élément li répété autant de fois que nécessaire. <br>
+				<h3>La liste à puce ul</h3>
+				La liste à puce se définit avec l'élément ul pour unordered list. Les listes à puces sont à utiliser lorsque l'ordre des éléments dans la liste n' pas d'importance particulière. <br>
+
+					&ltul&gt <br>
+					  &ltli&gtGerminal&lt/li&gt <br>
+					  &ltli&gtDu contrat social&lt/li&gt <br>
+					  &ltli&gtLes misérables&lt/li&gt <br>
+					&lt/ul&gt <br>
+				ce qui affiche le résultat suivant : <br>
+				Germinal <br>
+				Du contrat social <br>
+				Les misérables <br>
+				Remarquez que la puce par défaut est un petit rond noir et que la liste est légèrement en retrait sur la gauche. Ces propriétés peuvent être redéfinies en CSS avec list-style-type et margin-left. <br>
+				<h3>La liste numérotée ol</h3>
+				Les changements seront peu nombreux par rapport à une liste ul, seul la balise générale change : <br>
+				 &ltol&gt <br>
+				  &ltli&gtGerminal&lt/li&gt <br>
+				  &ltli&gtDu contrat social&lt/li&gt <br>
+				  &ltli&gtLes misérables&lt/li&gt <br>
+				&lt/ol&gt <br>
+				et affiche : <br>
+				Germinal <br> 
+				Du contrat social <br>
+				Les misérables <br>
+				On rappellera au passage que l'utilisation de liste numérotée induira une interprétation particulière de la part du navigateur  et des moteurs de recherches qui considéreront les premiers éléments de la liste comme plus importants. <br>
+
+				<h3>Les listes imbriquées</h3>
+				Il est parfois aussi nécessaire d'imbriquer une liste dans une autre. Cette pratique moins courante pose des problèmes de lisibilité de la page et aussi du code. On préférera créer deux listes différentes hormis dans certaines situations comme par exemple les menus de navigation. <br>
+				Le principe est simple : chaque nouvelle liste est incluse entièrement dans un li parent. <br>
+
+				 &ltol&gt <br>
+				  &ltli&gtGerminal <br>
+				    &ltul&gt <br>
+				      &ltli&gtDisponible en epub&lt/li&gt <br>
+				      &ltli&gtDisponible en PDF&lt/li&gt <br>
+				    &lt/ul&gt <br>
+				  &lt/li&gt <br>
+				  &ltli&gtDu contrat social&lt/li&gt <br>
+				  &ltli&gtLes misérables&lt/li&gt <br>
+				&lt/ol&gt <br>
+				et affiche : <br>
+				Germinal <br>
+				Disponible en epub <br>
+				Disponible en PDF <br>
+				Du contrat social <br>
+				Les misérables <br>
+				L'aspect de la liste de second niveau est alors un peu différent de la liste de premier niveau de manière à éviter toute confusion lors de la lecture. <br>
+				<h3>Les listes de définition</h3>
+
+				Les listes de définition ou de glossaire sont utilisées dans le cas particulier où la liste s'effectue sur deux niveaux :
+				un élément principal à nommer ; 
+				un élément secondaire qui vient le décrire. <br>
+				Le cas le plus fréquent d'utilisation de ce genre de liste est représenté par les dictionnaires ou les glossaires. Mais il est utilisable dans tout contexte permettant de donner des détails à un élément listé comme une liste bibliographique ou une liste d'instruction. <br>
+				En HTML, cela prendra la forme suivante : <br>
+
+				&ltdl&gt <br>
+				  &ltdt&gtGerminal&lt/dt&gt <br>
+				  &ltdd&gtLivre écrit par Emile Zola&lt/dd&gt <br>
+				  &ltdt&gtDu contrat social&lt/dt&gt <br>
+				  &ltdd&gtÉcrit par Jean-Jacques Rousseau&lt/dd&gt <br>
+				  &ltdt&gtLes misérables&lt/dt&gt <br>
+				  &ltdd&gtOeuvre majeure de Victor Hugo&lt/dd&gt <br>
+				  &ltdd&gtCertainement la plus représentative et représentée à l'étranger&lt/dd&gt <br>
+				&lt/dl&gt <br>
+
+				Indépendamment de l'aspect graphique qui peut être modifié par le CSS, l'utilisation de dfn permet de mettre en évidence l'élément principal. Si on lui ajoute un attribut id unique, on pourra alors s'y référer directement par le biais d'un lien et utiliser le système pour des glossaires, notes de bas de page ou de fin de document.
+
+				<h2 id="ancre7">Les liens en HTML5</h2>
+				<h3>Définition d’un lien HTML</h3>
+				Les liens en HTML vont nous servir à créer des ponts entre différentes pages d’un même site ou de sites différents. Le principe d’un lien est le suivant : en cliquant sur une ancre (qui est la partie visible par l’utilisateur d’un lien et qui peut être un texte comme une image), nos utilisateurs vont être redirigés vers une page cible. <br>
+				Il existe deux types principaux de liens hypertextes en HTML : <br>
+				Les liens internes qui vont servir à naviguer d’une page à l’autre dans un même site ; <br>
+				Les liens externes qui vont envoyer les utilisateurs vers une page d’un autre site. <br>
+				Ces deux types de liens vont être l’objet d’enjeux et d’implications différents en termes d’optimisation du référencement (SEO) et vont pouvoir être créés de façons différentes en HTML. <br>
+				Nous allons également pouvoir utiliser les liens en HTML pour naviguer au sein d’une même page et renvoyer à un endroit précis de celle-ci. Cela est utile pour fournir des accès ou des repères rapides à nos utilisateurs dans le cas d’un page très longue. <br>
+				Nous appelons ce type de liens faits au sein d’une même page des liens « ancres » tout simplement (même si ce terme peut porter à confusion car le terme « ancre » est aussi utilisé pour définir la partie visible et cliquable d’un lien). <br>
+				Dans chacun de ces cas, nous allons devoir utiliser l’élément HTML a accompagné de son attribut href pour créer un lien en HTML. <br>
+				Notez que les liens sont également un aspect fondamental d’une stratégie d’optimisation de référencement (SEO), que ce soit dans le cas de liens internes (pour effectuer ce qu’on appelle un maillage interne et donner plus de valeur à certaines de nos pages aux yeux de Google) ou de liens externes qui sont un des critères principaux de classement pour Google. Il est donc très important de bien les comprendre et les maitriser ! <br>
+				<h3>Création de liens : l’élément a et son attribut href</h3>
+				Quel que soit le type de liens que l’on souhaite créer en HTML (liens internes, des liens externes, ou des liens vers un autre endroit d’une même page), nous utiliserons toujours l’élément a qui est l’abréviation de « anchor » ou « ancre » en français accompagné de son attribut href pour « hypertext reference » ou « référence hypertexte » en français. <br>
+				L’élément HTML a est composé d’une paire de balises (balises ouvrante et fermante) et d’un contenu entre les balises que l’on va appeler “ancre”. Ce contenu peut être un texte, une image, etc. et sera la partie visible et cliquable du lien pour les utilisateurs. <br>
+				L’attribut href va nous servir à indiquer la cible du lien, c’est-à-dire l’endroit où l’utilisateur doit être envoyé après avoir cliqué sur le lien. Nous allons indiquer cette cible en valeur de l’attribut href. <br>
+				D’un point de vue du code, la seule chose qui va changer pour créer un lien ancre plutôt qu’interne ou interne plutôt qu’externe va être la façon dont on va construire la valeur qu’on va passer à l’attribut href. <br>
+				<h3>Créer des liens externes en HTML </h3>
+				Un lien externe est un lien qui part d’une page d’un site et ramène les utilisateurs vers une autre page d’un autre site.
+				Pour créer un lien vers une page d’un autre site en HTML (ou lien externe), il va falloir indiquer l’adresse complète de la page (c’est-à-dire son URL) en valeur de l’attribut href de notre lien. <br>
+				Imaginons par exemple que nous voulions créer un lien vers la page d’accueil de Wikipédia. L’URL de cette page est la suivante : https://www.wikipedia.org/. <br>
+				&ltp&gtPour créer des liens en HTML, on utilise l'élément a et son attribut href.&lt/p&gt <br>
+				&ltp&gtEx : lien vers &lta href="https://www.wikipedia.org/"&gtla home de Wikipedia&lt/a&gt&lt/p&gt <br>
+				Comme vous le voyez, on utilise bien un élément a pour créer un lien externe en HTML. On place notre attribut href au sein de la balise ouvrante de cet élément. Ici, on précise en valeur l’adresse (URL) de la page d’accueil de Wikipédia. <br>
+				Entre les deux balises, nous plaçons la partie visible et cliquable (l’ancre) de notre lien. Ici, cela correspond au texte « la home de Wikipédia ». Les utilisateurs vont pouvoir cliquer sur ce texte pour être renvoyés vers la page d’accueil de Wikipedia. <br>
+				Note : Ici, nous avons choisi de placer un texte comme ancre de notre lien, mais rien ne nous empêche de placer une image à la place afin de créer une image cliquable. <br>
+				Vous pouvez remarquer que le navigateur applique automatiquement des styles à la partie cliquable de nos liens :
+				le texte (notre ancre) est de couleur différente (bleu avant de cliquer puis volet une fois le lien visité) ;
+				le texte est souligné ; 
+				le curseur de notre souris change de forme lorsqu’on passe sur le lien. <br>
+				Nous allons bien évidemment pouvoir changer ces comportements en appliquant nos propres styles CSS à nos éléments a. Nous verrons comment faire cela plus tard dans ce cours. <br>
+				Bon à savoir : Lorsque l’attribut href prend une URL complète en valeur, on parle de valeur absolue (car celle-ci est fixe et ne dépend de rien). Les liens externes utilisent toujours des valeurs absolues. On parle de valeur absolue en opposition aux valeurs dites relatives, qui sont dans ce contexte des valeurs qui vont indiquer l’emplacement de la page cible relativement à la page source du lien. <br>
+				<h2 id="ancre8">Les Balises en Blocs</h2>
+				Les balises de type BLOC Xhtml sont des boites d'éléments qui peuvent contenir des éléments orphelins (comme du texte, simples caractères...), des balises de type EN LIGNE, des balises de type AUTOFERMANTE et même d'autres balises de type BLOC. <br>
+				Les balises de type BLOC se positionnent toujours les unes en dessous des autres. <br>
+				Exemple : &ltdiv&ggtJ'aime le Xhtml&lt/div&gt&ltdiv&gtVive le Xhtml&lt/div&gt <br>
+				affichera J'aime le Xhtml et Vive le Xhtml l'un en desous de l'autre. <br>
+				Leur largeur native (par défaut) est celle de l'élément qui	les contient. <br>
+				Exemple 1 : La balise &ltdiv&gt occupera toute la largeur de la page. <br>
+				&ltbody&gt <br>
+				     &ltdiv&gtVive le Xhtml&lt/div&gt <br>
+				&lt/body&gt <br>
+
+				Exemple 2 : La balise &ltdiv&gt enfant occupera toute la largeur de la balise &ltdiv&gt parent. <br>
+				&ltdiv&gt <br>
+				     &ltdiv&gtVive le Xhtml&lt/div&gt <br>
+				&lt/div&gt <br>
+				Liste des balises BLOC <br>
+				&ltaddress&gt ,	&ltblockquote&gt ,	&ltbody&gt ,	&ltdd&gt ,	&ltdiv&gt,	&ltdl&gt ,	&ltdt&gt ,	&ltfieldset&gt ,	&ltform&gt , &lth1&gt ,	&lth2&gt ,	&lth3&gt ,	&lth4&gt ,	&lth5&gt ,	&lth6&gt ,	&lthead&gt ,	&lthr/&gt ,	&lthtml&gt ,&ltli&gt ,	&ltmap&gt , &ltnoscript&gt ,	&ltol ,	&ltp&gt , &ltpre&gt ,  &ltscript&gt ,	&ltstyle&gt ,	&lttable&gt ,&lttbody&gt ,	&lttd&gt, &lttfoot&gt ,	&ltth&gt ,	&ltthead&gt ,	&lttr&gt ,	&ltul&gt <br>
+				<h2 id="ancre10">Les Tableaux En HTML5</h2>
+				Définition et utilité des tableaux HTML: <br>
+				Les tableaux en HTML vont nous permettre de présenter des données de manière organisée et sous une certaine forme pour les structurer et les rendre compréhensibles pour les navigateurs, moteurs de recherche et utilisateurs. <br>
+				Historiquement, de nombreux développeurs et web designer se sont servi à tort des tableaux pour mettre en forme de pages web. En effet, à l’époque, utiliser des tableaux semblait être un bon moyen de contrôler l’affichage et le placement des différents éléments d’une page en les plaçant dans des cellules. <br>
+				Dans cette lignée, de nombreux attributs HTML permettant de modifier / mettre en forme un tableau avaient été créés. <br>
+				Cependant, cette utilisation est à bannir aujourd’hui. En effet, je vous rappelle que le rôle du HTML est et a toujours été de structurer du contenu et de lui donner du sens, pas de mettre en forme ledit contenu (ce qui est le rôle du CSS). <br>
+				Ainsi, vous comprendrez également que pour mettre en forme visuellement un tableau, nous n’utiliserons pas les attributs HTML (qui sont en grande majorité dépréciés) mais plutôt des propriétés CSS. <br>
+				Les éléments constitutifs essentiels d’un tableau HTML <br>
+				Un tableau est un ensemble de lignes et de colonnes. L’intersection entre une ligne et une colonne est une cellule de tableau. <br>
+				Pour créer un tableau fonctionnel en HTML, nous allons devoir utiliser à minima 3 éléments : <br>
+				Un élément table (« tableau » en français) qui va définir le tableau en soi ; <br>
+				Des éléments tr, pour « table row » ou « ligne de tableau » en français qui vont nous permettre d’ajouter des lignes dans notre tableau ; <br>
+				Des éléments td, pour « table data » ou « donnée de tableau » en français qui vont nous permettre d’ajouter des cellules dans nos lignes et ainsi de créer automatiquement de nouvelles colonnes. <br>
+				L’élément HTML table va représenter le tableau en soi. Cet élément est composé d’une paire de balises ouvrante <table> et fermante </table> au sein desquelles nous allons placer les différents autres éléments de notre tableau. Les éléments tr et td sont également représentés sous la forme d’une paire de balises avec leur contenu entre les balises. <br>
+				<h3>Créer un tableau simple en HTML</h3>
+				Pour créer un tableau en HTML, il y a une chose que vous devez bien comprendre qui est que les tableaux HTML vont être créés ligne par ligne. <br>
+				A chaque fois que nous voudrons ajouter une ligne dans notre tableau, nous utiliserons un nouvel élément tr. <br>
+				Nous allons ensuite pouvoir ajouter autant d’éléments td au sein de chacune de nos lignes. Chaque élément td va représenter une cellule dans le tableau. <br>
+				Par exemple, pour créer un tableau en HTML contenant 3 lignes contenant chacune 4 cellules (c’est-à-dire un tableau de 3 lignes, 4 colonnes), nous utiliserons notre élément table qui va contenir 3 éléments tr et chaque élément tr contiendra 4 éléments td comme ceci (ne tenez pas compte de la mise en forme pour le moment, nous en reparlerons plus tard) : <br>
+				&lttable&gt <br>
+					  &lttr&gt <br>
+					    &lttd&gtNom&lt/td&gt <br>
+					    &lttd&gtPrénom&lt/td&gt <br>
+					    &lttd&gtAge&lt/td&gt <br>
+					    &lttd&gtMail&lt/td&gt <br>
+					  &lt/tr&gt <br>
+					  &lttr&gt <br>
+					    &lttd&gtGiraud&lt/td&gt <br>
+					    &lttd&gtPierrelt/td&gt <br>
+					    &lttd&gt28&lt/td&gt <br>
+					    &lttd&gtpierre.giraud@edhec.com&lt/td&gt <br>
+					  &lt/tr&gt <br>
+					  &lttr&gt <br>
+					    &lttd&gtJoly&lt/td&gt <br>
+					    &lttd&gtPauline&lt/td&gt <br>
+					    &lttd&gt27&lt/td&gt <br>
+					    &lttd&gtpjl@gmail.com&lt/td&gt <br>
+					  &lt/tr&gt <br>
+				&lt/table&gt <br>
+				Nous venons ci-dessus de créer notre premier tableau entièrement en HTML. Retenez bien la syntaxe et particulièrement l’ordre d’imbrication des éléments avec nos éléments td à l’intérieur de nos éléments tr : on va utiliser un nouvel élément td dès que l’on va vouloir ajouter une cellule (et donc une colonne) au sein d’une même ligne. <br>
+				Si vous essayez de ne recopier que le code HTML présenté ci-dessus et de l’afficher, vous risquez d’avoir un objet qui ne ressemble pas à l’idée que l’on se fait d’un tableau. C’est tout à fait normal puisque j’ai déjà ici mis sommairement notre premier tableau HTML en forme en utilisant des propriétés CSS. <br>
+				<h2 id="ancre11">Les Formulaires En HTML5</h2>
+				<h3>Définition et rôle des formulaires HTML</h3>
+				Les formulaires HTML vont nous permettre de recueillir des données envoyées par nos utilisateurs. Les formulaires vont se révéler indispensable pour tout site proposant aux utilisateurs de s’inscrire et de se connecter, et vont être l’élément privilégié pour permettre aux utilisateurs d’envoyer un message via notre site par exemple. <br>
+				Les formulaires HTML vont pouvoir être composés de champs de texte (cas d’un champ de formulaire demandant à un utilisateur de renseigner son adresse mail pour se connecter ou pour s’inscrire sur le site par exemple), de listes d’options (choix d’un pays dans une liste de pays par exemple), de cases à cocher, etc. <br>
+				L’intérêt et le rôle principal des formulaires HTML va résider dans le fait que les formulaires vont permettre de transmettre des données. En effet, une fois que l’utilisateur a fini de remplir un formulaire, il va pouvoir l’envoyer. Les données envoyées vont ensuite pouvoir être stockées ou traitées / manipulée (on va ainsi par exemple pouvoir vérifier que le pseudo et le mot de passe d’un utilisateur souhaitant se connecter à notre site sont valides). <br>
+				<h3>L’élément form et ses attributs</h3>
+				Pour créer un formulaire, nous allons utiliser l’élément HTML form. Cet élément form va avoir besoin de deux attributs pour fonctionner normalement : les attributs method et action. <br>
+				L’attribut method va indiquer comment doivent être envoyées les données saisies par l’utilisateur. Cet attribut peut prendre deux valeurs : get et post. <br>
+				Que signifient ces deux valeurs et laquelle choisir ? Les valeurs get et post vont déterminer la méthode de transit des données du formulaire. En choisissant get, on indique que les données doivent transiter via l’URL (sous forme de paramètres) tandis qu’en choisissant la valeur post on indique qu’on veut envoyer les données du formulaire via transaction post HTTP. <br>
+				Concrètement, si l’on choisit l’envoi via l’URL (avec la valeur get), nous serons limités dans la quantité de données pouvant être envoyées et surtout les données vont être envoyées en clair. Evitez donc absolument d’utiliser cette méthode si vous demandez des mots de passe ou toute information sensible dans votre formulaire. <br>
+				Cette méthode de transit est généralement utilisée lors de l’affichage de produits triés sur un site e-commerce (car oui, les options de tris sont des éléments de formulaires avant tout !). Regardez bien les URL la prochaine fois que vous allez sur un site e-commerce après avoir fait un tri : si vous retrouvez des éléments de votre tri dedans c’est qu’un get a été utilisé. <br>
+				En choisissant l’envoi de données via post transaction HTTP (avec la valeur post), nous ne sommes plus limités dans la quantité de données pouvant être envoyées et les données ne sont visibles par personne. C’est donc généralement la méthode que nous utiliserons pour l’envoi véritablement de données que l’on souhaite stocker (création d’un compte client, etc.).
+				L’attribut action va lui nous servir à préciser l’adresse relative de la page qui va traiter les données. En effet, nous ne pouvons pas effectuer les opérations de traitement ou de stockage des données avec le HTML. Pour faire cela, nous devrons utiliser des langages comme le PHP (pour le traitement) et le MySQL (pour le stockage) par exemple. <br>
+				<h3>Création d’un formulaire HTML</h3>
+				Comme énoncé précédemment, nous allons créer un petit formulaire en HTML qui va nous servir pour le reste de cette partie.
+				Ce formulaire va nous permettre de récupérer les informations suivantes : <br>
+				Le prénom d’un utilisateur ; <br>
+				Son adresse mail ; <br>
+				Son âge ; <br>
+				Son sexe ; <br>
+				Son pays de résidence. <br>
+				Voici les codes HTML et CSS que nous allons utiliser pour ce formulaire ainsi que le résultat obtenu : <br>
+
+        
+							        &ltform action="formulaire.php" method="post"&gt <br>
+							            &ltdiv class="c100"&gt  <br>
+							                &ltlabel for="prenom"&gtPrénom : &lt/label&gt <br>
+							                &ltinput type="text" id="prenom" name="prenom"&gt <br>
+							            &lt/div&gt <br>
+							            &ltdiv class="c100"&gt <br>
+							                &ltlabel for="mail"&gtEmail : &lt/label&gt <br>
+							                &ltinput type="email" id="mail" name="mail"&gt <br>
+							            &lt/div&gt <br>
+							            &ltdiv class="c100"&gt <br>
+							                &ltlabel for="age"&gtAge : &lt/label&gt <br>
+							                &ltinput type="number" id="age" name="age"&gt <br>
+							            &lt/div&gt <br>
+							            &ltdiv class="c100"&gt <br>
+							                &ltinput type="radio" id="femme" name="sexe" value="femme"&gt <br>
+							                &ltlabel for="femme"&gtFemme&lt/label&gt <br>
+							                &ltinput type="radio" id="homme" name="sexe" value="homme"&gt <br>
+							                &ltlabel for="homme"&gtHomme&lt/label&gt <br>
+							                &ltyinput type="radio" id="autre" name="sexe" value="autre"&gt <br>
+							                &ltlabel for="autre"&gtAutre&lt/label&gt <br>
+							            &lt/div&gt <br>
+							            &ltdiv class="c100"&gt <br>
+							                &ltlabel for="pays"&gtPays de résidence :&lt/label&gt <br>
+							                &ltselect id="pays" name="pays"&gt <br>
+							                    &ltoptgroup label="Europe"&gt <br>
+							                        &ltoption value="france"&gtFrance&lt/option&gt <br>
+							                        &ltoption value="belgique"&gtBelgique&lt/option&gt <br>
+							                        &ltoption value="suisse"&gtSuisse&lt/option&gt <br>
+							                    &lt/optgroup&gt <br>
+							                    &ltoptgroup label="Afrique"&gt <br>
+							                        &ltoption value="algerie"&gtAlgérie&lt/option&gt <br>
+							                        &ltoption value="tunisie"&gtTunisie&lt/option&gt <br>
+							                        &ltoption value="maroc"&gtMaroc&lt/option&gt <br>
+							                        &ltoption value="madagascar"&gtMadagascar&lt/option&gt <br>
+							                        &ltoption value="benin"&gtBénin&lt/option&gt <br>
+							                        &ltoption value="togo"&gtTogo&lt/option&gt <br>
+							                    &lt/optgroup&gt <br>
+							                    &ltoptgroup label="Amerique"&gt <br>
+							                        &ltoption value="canada"&gtCanada&lt/option&gt <br>
+							                    &lt/optgroup&gt <br>
+							                &lt/select&gt <br>
+							            &lt/div&gt <br>
+							            &ltdiv class="c100" id="submit"&gt <br>
+							                &ltinput type="submit" value="Envoyer"&gt <br>
+							            &lt/div&gt <br>
+							        &lt/form&gt <br>
+					Ici, on utilise des éléments input pour demander le prénom, le mail et l’âge de l’utilisateur. On ajuste la valeur de l’attribut type en fonction du type de données attendues (texte, nombre, etc.). <br>
+					On utilise également un input type="radio" pour le choix du sexe. L’utilisation de boutons radio est ici toute indiquée puisque l’utilisateur ne devrait pouvoir faire qu’un choix dans la liste d’options et car cela va grandement faciliter le traitement des données par la suite puisque nous allons toujours recevoir soit la valeur « femme » soit la valeur « homme » soit « autre ». <br>
+					Enfin, nous utilisons un élément select pour le choix des pays avec différents éléments option pour chaque option. Ici, nous groupons les pays par continent avec l’élément optgroup.
+					Notez qu’on utilise également à chaque fois des éléments label pour indiquer à l’utilisateur ce qu’il doit renseigner comme information. On lie également chaque label à son champ de formulaire grâce aux attributs for du label et id de l’input ou du select en leur donnant la même valeur. <br>
+					Côté mise en forme et CSS, on va se contenter du strict minimum puisqu’encore une fois ce n’est pas l’objet de cette partie. Nous allons ici nous servir de nos div class="c100" pour mettre chaque champ de formulaire sur une nouvelle ligne et allons mettre rapidement en forme les autres éléments.
+					Notez bien ici les valeurs données aux attributs method et action et notre élément form car c’est cela qui va particulièrement nous intéresser. <br>
+					Ici, on indique qu’on choisit d’envoyer nos données par transaction http de type post. Nous allons envoyer les données vers la page formulaire.php. C’est cette page là qui va s’occuper du traitement des données du formulaire et sur laquelle nous allons nous concentrer par la suite. <br>
+					Si vous cliquez sur le bouton de validation, vous pouvez observer que vous êtes renvoyés vers cette page. Cependant, comme nous n’avons pas encore crée la page, vous devriez avoir une erreur de type « page introuvable ». <br>
+					Nous avons notre base, il est donc maintenant temps d’apprendre à récupérer et à manipuler les données envoyées via nos formulaires en PHP. <br>
+					<h1 id="ancre12">Les Medias Queries</h1>
+					<h3>Définition rapide des Media Queries</h3>
+					Les Media Queries vont nous permettre d’appliquer certaines règles CSS de manière conditionnelle. Par exemple, on va pouvoir définir une largeur pour un élément pour certaines tailles d’écrans et une largeur différente pour le même élément pour d’autres tailles d’écran. <br>
+					Cela va nous permettre d’afficher des pages avec des organisations différentes selon la taille de l’écran d’un visiteur. Attention ici à ne pas confondre les Media Queries et les valeurs de taille relatives et en % ou le flexbox. <br>
+					Les valeurs en % et le flexbox vont pouvoir permettre aux éléments de grandir ou de rétrécir selon la taille d’un écran mais selon la même règle CSS. <br>
+					Avec les Media Queries, nous allons pouvoir appliquer des règles CSS totalement différentes selon les tailles d’écrans. Notez par ailleurs qu’on va tout à fait pouvoir utiliser le flexbox, etc. dans nos Media Queries. <br>
+					Les valeurs en % et le flexbox vont pouvoir permettre aux éléments de grandir ou de rétrécir selon la taille d’un écran mais selon la même règle CSS. <br>
+					Avec les Media Queries, nous allons pouvoir appliquer des règles CSS totalement différentes selon les tailles d’écrans. Notez par ailleurs qu’on va tout à fait pouvoir utiliser le flexbox, etc. dans nos Media Queries. <br>
+						.conteneur-flex{ <br>
+							    display: flex; <br>
+							    flex-flow : row wrap; <br>
+							    justify-content: space-around; <br>
+							    background-color: RGBa(120,150,240,1); <br>
+							} <br>
+							.element-flex{ <br>
+							    flex: 0 1 20%; <br>
+							    background-color: RGBa(120,240,150,0.7); <br>
+							    height: 50px; <br>
+							    margin: 10px; <br>
+							} <br>
+
+							@media screen and (max-width: 780px){ <br>
+							    .conteneur-flex{ <br>
+							        flex-flow: column wrap; <br>
+							    } <br>
+							} <br>
+					Ici, on commence par définir un conteneur flexible qui va contenir trois éléments flexibles. <br>
+					On définit ensuite l’axe principal et la direction de notre conteneur avec flex-flow : row wrap. Notre axe principal va donc être l’axe horizontal par défaut et les éléments flexibles vont s’afficher les uns à côté des autres. Les éléments seront distribués régulièrement le long de leur axe principal avec justify-content: space-around. <br>
+					On définit finalement une dimension de 20% pour nos éléments flexbiles dans leur axe principal et on leur interdit de grossir automatiquement. <br>
+					Ensuite, on va définir une règle media avec @media. Ici, notre règle va s’appliquer à tous les appareils disposant d’un écran (screen) de taille inférieure ou égale à 780px (max-width : 780px).
+					Dans cette règle media, nous allons pouvoir écrire autant de règles CSS que l’on souhaite. Ces règles CSS ne vont être appliqués que lorsqu’un utilisateur affiche la page avec un écran ou dans une fenêtre de taille inférieure à 780px.
+					Ici, on choisit de définir la direction de notre conteneur flexible avec flex-flow: column wrap pour tous les écrans de taille inférieure à 780px. <br>
+					Notez qu’en cas de conflit (c’est-à-dire si une même propriété a déjà été définie en dehors d’une règle media ou dans une autre règle media), c’est la valeur de la propriété définie dans la règle la plus précise ou la plus restrictive qui va s’appliquer. <br>
+					Dans le cas présent, nos éléments flexibles s’afficheront donc en ligne de manière générale et en colonne dès que la fenêtre fera moins de 780px. N’hésitez pas à recopier le code ci-dessus ou à l’ouvrir directement dans CodePen et à modifier la taille de votre fenêtre pour bien voir le changement s’opérer. <br>
+					Ce type de modification de structure ne serait pas possible en utilisant juste le flexbox ou des valeurs en % et ne va pouvoir être réalisé qu’avec les Media Queries. <br>
+					<h2 id="ancre13">API de géolocalisation HTML</h2>
+					L'API de géolocalisation HTML est utilisée pour localiser la position d'un utilisateur. <br>
+					Localiser la position de l'utilisateur <br>
+					L'API de géolocalisation HTML est utilisée pour obtenir la position géographique d'un utilisateur. <br>
+					Comme cela peut compromettre la confidentialité, le poste n'est pas disponible à moins que l'utilisateur ne l'approuve. <br>
+					Remarque : La géolocalisation est plus précise pour les appareils avec GPS, comme les smartphones. <br>
+					Utilisation de la géolocalisation HTML <br>
+					La getCurrentPosition()méthode est utilisée pour renvoyer la position de l'utilisateur. <br>
+					L'exemple ci-dessous renvoie la latitude et la longitude de la position de l'utilisateur : <br>
+
+					&ltscript&gt <br>
+							var x = document.getElementById("demo"); <br>
+							function getLocation() { <br>
+							  if (navigator.geolocation) { <br>
+							    navigator.geolocation.getCurrentPosition(showPosition); <br>
+							  } else { <br>
+							    x.innerHTML = "Geolocation is not supported by this browser."; <br>
+							  } <br>
+							} <br>
+
+							function showPosition(position) { <br>
+							  x.innerHTML = "Latitude: " + position.coords.latitude +  
+							  "<br>Longitude: " + position.coords.longitude; <br>
+							} <br>
+					&lt/script&gt <br>
+
+					Exemple expliqué : <br>
+					Vérifiez si la géolocalisation est prise en charge
+					Si elle est prise en charge, exécutez la méthode getCurrentPosition(). Si ce n'est pas le cas, affichez un message à l'utilisateur <br>
+					Si la méthode getCurrentPosition() réussit, elle renvoie un objet de coordonnées à la fonction spécifiée dans le paramètre (showPosition) <br>
+					La fonction showPosition() affiche la latitude et la longitude <br>
+					L'exemple ci-dessus est un script de géolocalisation très basique, sans gestion des erreurs. <br>
+					Gestion des erreurs et des rejets <br>
+					Le deuxième paramètre de la getCurrentPosition()méthode est utilisé pour gérer les erreurs. Il spécifie une fonction à exécuter si elle ne parvient pas à obtenir l'emplacement de l'utilisateur : <br>
+					Exemple
+					function showError(error) { <br>
+						  switch(error.code) { <br>
+						    case error.PERMISSION_DENIED: <br>
+						      x.innerHTML = "User denied the request for Geolocation." <br>
+						      break; <br>
+						    case error.POSITION_UNAVAILABLE: <br>
+						      x.innerHTML = "Location information is unavailable." <br>
+						      break; <br>
+						    case error.TIMEOUT: <br>
+						      x.innerHTML = "The request to get user location timed out." <br>
+						      break; <br>
+						    case error.UNKNOWN_ERROR: <br>
+						      x.innerHTML = "An unknown error occurred." <br>
+						      break; <br>
+						  } <br>
+						} <br>
+				</P> 
+		</div>
+	</div>
+
+</body>
+</html>

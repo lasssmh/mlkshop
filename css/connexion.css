@@ -1,0 +1,39 @@
+body {
+	background-color: rgb(5, 0, 86);
+}
+#formulaire {
+	background-color: #FFF;
+	width: 300px;
+	margin: auto;
+	border-radius: 20px;
+	border: 3px solid green;
+}
+#formulaire img {
+	display: block;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 5px solid rgb(32, 44, 69);
+	margin-top: 10px;
+}
+#formulaire .input input{
+	margin: 10px;
+	padding: 10px;
+	width: 260px;
+}
+#formulaire button {
+	background-color: #050A30;
+	width: 280px;
+	color: #FFF;
+	padding: 10px;
+	margin: 10px;
+	text-transform: uppercase;
+}
+#formulaire .row a {
+	margin-left: 50px;
+	text-decoration: none;
+}
+#formulaire .row input {
+	margin: 10px;
+}

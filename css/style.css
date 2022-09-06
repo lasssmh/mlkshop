@@ -1,0 +1,197 @@
+
+ /*Initialisation de la page*/
+ * { 
+      list-style: none;
+      text-decoration : none;
+      margin :0 ; 
+      padding: 0;
+      font-family: 'open sans',sans-serif,arial,verdana,tahoma; 
+    }
+   
+/*Design du  menu-laterale*/
+#menu-laterale {
+	background-color: rgb(5, 68, 104);
+	width: 250px;
+	height: 100%;
+	padding: 20px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+#menu-laterale #profile {
+	margin-bottom: 30px;
+	text-align: center;
+	color: #FFF;
+} 
+#profile img {
+	display: block;
+	height: 150px;
+	width: 150px;
+	margin: 0 auto;
+	border-radius: 50%;
+	border: 10px solid rgb(32, 44, 69);
+
+}
+#profile p {
+	font-size: 1.5 em;
+	margin-top: 2px;
+}
+#profile h3 {
+	font-size: 1.5;
+}
+    /*Design de la liste*/
+
+
+#menu-laterale ul li a {
+	display: block;
+	padding: 9px;
+	color: #FFF;
+	border-bottom: 1px solid #10558D;
+	font-size: 16px;
+	position: relative ;
+}
+#menu-laterale ul li a:hover ,.active {
+	background-color: #FFF;
+	color: darkblue !important;
+	border-right: 2px solid rgb(5, 68, 104);
+}
+/*Design du contenu du blog*/
+#section{
+	width: calc(100% -250px);
+	margin-left: 250px;
+
+}
+#section .topBar{
+	background-color: rgb(32,44,69);
+	height: 55px;
+	width: 100%;
+	padding: 0 30px;
+	align-items: center;
+	display: flex;
+}
+#section .topBar a h2 {
+	color: #F4FAFB;
+	font-size: 2.3rem;
+}
+#section .topBar a h2:hover {
+	color: rgba(92,92,252, 0.8);
+}
+/*Design du blog banniere*/
+#section #banner {
+	height: 220px;
+	background-color: rgb(7,105,185);
+	padding: 0 30px;
+	align-items: center;
+	color: #FFF;
+	
+}
+.titre {
+	text-align: center;
+	padding-top: 50px;
+	font-size: 2em;	
+}
+.trait{
+	border: 5px solid lightyellow;
+	width: 50%;
+	margin: 10px auto;
+}
+#banner button {
+	height: 6vh;
+	color: rgb(5, 68, 104);
+	font-size: 1.5em;
+	width: 20%;
+	margin: 10px auto;
+	align-items: center;
+	display: block;
+}
+/*Design de la section des articles*/
+.article {
+	height: 250px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	padding: 0 15px;
+}
+.article img {
+	width: 260px;
+}
+.article .contenu {
+	margin-left: 10px;
+	font-size: 1.1em;
+}
+/*Design de la section des article1*/
+.article1 {
+	height: 250px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	padding: 0 15px;
+}
+.article1 img {
+	width: 260px;
+}
+.article1 .contenu1 {
+	margin-left: 10px;
+	font-size: 20px;
+}
+#section #banner1 {
+	height: 220px;
+	background-color: rgb(7,105,185);
+	padding: 0 30px;
+	align-items: center;
+	color: #FFF;
+}
+#titre1 {
+	text-align: center;
+	font-size: 1.5em;	
+}
+#title {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1em;
+}
+/*Design de la section des article2*/
+.article2 {
+	height: 250px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	padding: 0 15px;
+}
+.article2 img {
+	width: 260px;
+}
+.article2 .contenu2 {
+	margin-left: 10px;
+	font-size: 20px;
+}
+/*Design de la section des article3*/
+.article3 {
+	height: 250px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	padding: 0 15px;
+}
+.article3 img {
+	width: 260px;
+}
+.article3 .contenu3 {
+	margin-left: 10px;
+	font-size: 20px;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	background-color:  rgb(32,44,69);
+	color: #FFF;
+	height: 40px;
+	align-items: center;
+}
+.inputs {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	height: 30px;
+}
